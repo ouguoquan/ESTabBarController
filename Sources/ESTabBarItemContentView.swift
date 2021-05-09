@@ -224,10 +224,10 @@ open class ESTabBarItemContentView: UIView {
             let isWide = isLandscape || traitCollection.horizontalSizeClass == .regular // is landscape or regular
             if #available(iOS 11.0, *), isWide {
                 s = UIScreen.main.scale == 3.0 ? 23.0 : 20.0
-                f = UIScreen.main.scale == 3.0 ? 13.0 : 12.0
+                f = UIScreen.main.scale == 3.0 ? 15.0 : 13.0
             } else {
                 s = 23.0
-                f = 10.0
+                f = 13.0
             }
             
             if !imageView.isHidden && !titleLabel.isHidden {
